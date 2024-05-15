@@ -8,18 +8,18 @@ The main goal is to mimic `az ad sp create-for-rbac`.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.0 |
-| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | >= 2.28.1 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 3.22.0 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.4.3 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.6.0 |
+| <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | >= 2.49.1 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 3.103.1 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.6.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azuread"></a> [azuread](#provider\_azuread) | >= 2.28.1 |
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 3.22.0 |
-| <a name="provider_random"></a> [random](#provider\_random) | >= 3.4.3 |
+| <a name="provider_azuread"></a> [azuread](#provider\_azuread) | >= 2.49.1 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 3.103.1 |
+| <a name="provider_random"></a> [random](#provider\_random) | >= 3.6.1 |
 
 ## Modules
 

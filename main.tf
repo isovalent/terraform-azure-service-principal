@@ -37,7 +37,7 @@ resource "azuread_application" "main" {
 
 // Create an Azure AD service principal associated with the Azure AD application.
 resource "azuread_service_principal" "main" {
-  application_id = azuread_application.main.application_id
+  client_id = azuread_application.main.client_id
   owners = [
     data.azuread_client_config.main.object_id,
   ]

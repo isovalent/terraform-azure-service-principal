@@ -14,7 +14,7 @@
 
 output "client_id" {
   description = "The client ID of the Azure AD service principal."
-  value       = azuread_application.main.application_id
+  value       = azuread_application.main.client_id
 }
 
 output "client_secret" {
