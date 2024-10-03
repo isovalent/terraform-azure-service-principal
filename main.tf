@@ -52,6 +52,6 @@ resource "azurerm_role_assignment" "main" {
 
 // Create a password (client secret) for the Azure AD application.
 resource "azuread_application_password" "main" {
-  application_object_id = azuread_application.main.object_id
+  application_id = azuread_application.main.object_id
   end_date_relative     = "8640h"
 }
