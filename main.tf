@@ -45,13 +45,13 @@ resource "azuread_service_principal" "main" {
 
 // Create role assignment for the Azure AD service principal.
 resource "azurerm_role_assignment" "main" {
-  principal_id         = azuread_service_principal.main.id
+  principal_id         = azuread_service_principal.main.object_id
   role_definition_name = var.role
   scope                = data.azurerm_subscription.main.id
 }
 
 // Create a password (client secret) for the Azure AD application.
 resource "azuread_application_password" "main" {
-  application_id = azuread_application.main.object_id
+  application_id = azuread_application.main.id
   end_date_relative     = "8640h"
 }
