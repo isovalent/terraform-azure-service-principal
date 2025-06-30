@@ -53,5 +53,8 @@ resource "azurerm_role_assignment" "main" {
 // Create a password (client secret) for the Azure AD application.
 resource "azuread_application_password" "main" {
   application_id = azuread_application.main.id
-  end_date_relative     = "8640h"
+  end_date       = timeadd(timestamp(), "8640h") # Inspired by https://github.com/hashicorp/terraform-provider-azuread/issues/1424#issuecomment-2438631573
+  lifecycle {
+    ignore_changes = [end_date]
+  }
 }
