@@ -16,15 +16,15 @@ terraform {
   required_providers {
     azuread = {
       source  = "hashicorp/azuread"
-      version = ">= 2.49.1"
+      version = ">= 3.4.0"
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 3.103.1"
+      version = ">= 3.117.1" # https://github.com/Azure/terraform-azurerm-network/issues/160
     }
     random = {
       source  = "hashicorp/random"
-      version = ">= 3.6.1"
+      version = ">= 3.7.2"
     }
   }
   required_version = ">= 1.6.0"
